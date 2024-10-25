@@ -1,0 +1,24 @@
+// chastity_left.overlay
+
+#include "chastity.dtsi"
+
+&kscan0 {
+    row-gpios
+        = <&pro_micro A GPIO_ACTIVE_HIGH>
+        , <&pro_micro B GPIO_ACTIVE_HIGH>
+        , <&pro_micro C GPIO_ACTIVE_HIGH>
+        , <&pro_micro D GPIO_ACTIVE_HIGH>
+        , <&pro_micro E GPIO_ACTIVE_HIGH>
+        ;
+
+    col-gpios
+        = <&pro_micro F GPIO_ACTIVE_HIGH>
+        , <&pro_micro G GPIO_ACTIVE_HIGH>
+        , <&pro_micro H GPIO_ACTIVE_HIGH>
+        , <&pro_micro I GPIO_ACTIVE_HIGH>
+        , <&pro_micro J GPIO_ACTIVE_HIGH>
+        , <&pro_micro K GPIO_ACTIVE_HIGH>
+        , <&pro_micro L GPIO_ACTIVE_HIGH>
+        ;
+    /* Replace A, B, C, ... with actual left-side pin numbers */
+};

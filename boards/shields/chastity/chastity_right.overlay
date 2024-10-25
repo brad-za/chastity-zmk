@@ -1,0 +1,28 @@
+// chastity_right.overlay
+
+#include "chastity.dtsi"
+
+&kscan0 {
+    row-gpios
+        = <&pro_micro M GPIO_ACTIVE_HIGH>
+        , <&pro_micro N GPIO_ACTIVE_HIGH>
+        , <&pro_micro O GPIO_ACTIVE_HIGH>
+        , <&pro_micro P GPIO_ACTIVE_HIGH>
+        , <&pro_micro Q GPIO_ACTIVE_HIGH>
+        ;
+
+    col-gpios
+        = <&pro_micro R GPIO_ACTIVE_HIGH>
+        , <&pro_micro S GPIO_ACTIVE_HIGH>
+        , <&pro_micro T GPIO_ACTIVE_HIGH>
+        , <&pro_micro U GPIO_ACTIVE_HIGH>
+        , <&pro_micro V GPIO_ACTIVE_HIGH>
+        , <&pro_micro W GPIO_ACTIVE_HIGH>
+        , <&pro_micro X GPIO_ACTIVE_HIGH>
+        ;
+    /* Replace M, N, O, ... with actual right-side pin numbers */
+};
+
+&default_transform {
+    col-offset = <7>; // Offset for right side matrix
+};
