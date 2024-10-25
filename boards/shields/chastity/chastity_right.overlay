@@ -4,25 +4,24 @@
 
 &kscan0 {
     row-gpios
-        = <&pro_micro M GPIO_ACTIVE_HIGH>
-        , <&pro_micro N GPIO_ACTIVE_HIGH>
-        , <&pro_micro O GPIO_ACTIVE_HIGH>
-        , <&pro_micro P GPIO_ACTIVE_HIGH>
-        , <&pro_micro Q GPIO_ACTIVE_HIGH>
+        = <&pro_micro P GPIO_ACTIVE_HIGH>  // Row 1 (top row)
+        , <&pro_micro P GPIO_ACTIVE_HIGH>  // Row 2
+        , <&pro_micro P GPIO_ACTIVE_HIGH>  // Row 3
+        , <&pro_micro P GPIO_ACTIVE_HIGH>  // Row 4
+        , <&pro_micro P GPIO_ACTIVE_HIGH>  // Row 5
         ;
 
     col-gpios
-        = <&pro_micro R GPIO_ACTIVE_HIGH>
-        , <&pro_micro S GPIO_ACTIVE_HIGH>
-        , <&pro_micro T GPIO_ACTIVE_HIGH>
-        , <&pro_micro U GPIO_ACTIVE_HIGH>
-        , <&pro_micro V GPIO_ACTIVE_HIGH>
-        , <&pro_micro W GPIO_ACTIVE_HIGH>
-        , <&pro_micro X GPIO_ACTIVE_HIGH>
+        = <&pro_micro P GPIO_ACTIVE_HIGH>  // Column 1
+        , <&pro_micro P GPIO_ACTIVE_HIGH>  // Column 2
+        , <&pro_micro P GPIO_ACTIVE_HIGH>  // Column 3
+        , <&pro_micro P GPIO_ACTIVE_HIGH>  // Column 4
+        , <&pro_micro P GPIO_ACTIVE_HIGH>  // Column 5
+        , <&pro_micro P GPIO_ACTIVE_HIGH>  // Column 6
+        , <&pro_micro P GPIO_ACTIVE_HIGH>  // Column 7
         ;
-    /* Replace M, N, O, ... with actual right-side pin numbers */
 };
 
 &default_transform {
-    col-offset = <7>; // Offset for right side matrix
+    col-offset = <7>;  // Right-side matrix offset
 };

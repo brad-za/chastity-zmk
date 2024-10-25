@@ -1,24 +1,23 @@
-// chastity_left.overlay
+// chastity_right.overlay
 
 #include "chastity.dtsi"
 
 &kscan0 {
     row-gpios
-        = <&pro_micro A GPIO_ACTIVE_HIGH>
-        , <&pro_micro B GPIO_ACTIVE_HIGH>
-        , <&pro_micro C GPIO_ACTIVE_HIGH>
-        , <&pro_micro D GPIO_ACTIVE_HIGH>
-        , <&pro_micro E GPIO_ACTIVE_HIGH>
+        = <&pro_micro P GPIO_ACTIVE_HIGH>  // Row 1 (top row)
+        , <&pro_micro P GPIO_ACTIVE_HIGH>  // Row 2
+        , <&pro_micro P GPIO_ACTIVE_HIGH>  // Row 3
+        , <&pro_micro P GPIO_ACTIVE_HIGH>  // Row 4
+        , <&pro_micro P GPIO_ACTIVE_HIGH>  // Row 5
         ;
 
     col-gpios
-        = <&pro_micro F GPIO_ACTIVE_HIGH>
-        , <&pro_micro G GPIO_ACTIVE_HIGH>
-        , <&pro_micro H GPIO_ACTIVE_HIGH>
-        , <&pro_micro I GPIO_ACTIVE_HIGH>
-        , <&pro_micro J GPIO_ACTIVE_HIGH>
-        , <&pro_micro K GPIO_ACTIVE_HIGH>
-        , <&pro_micro L GPIO_ACTIVE_HIGH>
+        = <&pro_micro P GPIO_ACTIVE_HIGH>  // Column 1
+        , <&pro_micro P GPIO_ACTIVE_HIGH>  // Column 2
+        , <&pro_micro P GPIO_ACTIVE_HIGH>  // Column 3
+        , <&pro_micro P GPIO_ACTIVE_HIGH>  // Column 4
+        , <&pro_micro P GPIO_ACTIVE_HIGH>  // Column 5
+        , <&pro_micro P GPIO_ACTIVE_HIGH>  // Column 6
+        , <&pro_micro P GPIO_ACTIVE_HIGH>  // Column 7
         ;
-    /* Replace A, B, C, ... with actual left-side pin numbers */
 };
