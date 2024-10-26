@@ -3,8 +3,3 @@ on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
-    with:
-      config_path: config
-      board_matrix: |
-        chastity_left
-        chastity_right
