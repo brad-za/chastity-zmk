@@ -3,7 +3,7 @@ id: chastity
 name: Chastity
 type: shield
 url: https://github.com/poes/chastity-zmk
-requires: [nice_nano_v2]
+requires: [nice_nano]
 exposes: []
 features:
   - keys
