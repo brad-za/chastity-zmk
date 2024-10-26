@@ -1,0 +1,11 @@
+file_format: "1"
+id: chastity
+name: Chastity
+type: shield
+url: https://zmk.dev/docs/
+requires: [nice_nano_v2]
+exposes: []
+features:
+  - keys
+siblings:
+  - chastity_left

@@ -6,6 +6,11 @@
     compatible = "zmk,matrix-transform";
     columns = <7>;
     rows = <5>;
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,physical-layout = &default_layout;
+        // Other chosen items
+    };
     map = <
         // Left Side
         RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(0,4) RC(0,5) RC(0,6)
