@@ -1,23 +1,24 @@
-// chastity_right.overlay
+// chastity_left.overlay
 
 #include "chastity.dtsi"
 
 &kscan0 {
     row-gpios
-        = <&pro_micro P GPIO_ACTIVE_HIGH>  // Row 1 (top row)
-        , <&pro_micro P GPIO_ACTIVE_HIGH>  // Row 2
-        , <&pro_micro P GPIO_ACTIVE_HIGH>  // Row 3
-        , <&pro_micro P GPIO_ACTIVE_HIGH>  // Row 4
-        , <&pro_micro P GPIO_ACTIVE_HIGH>  // Row 5
+        = <&pro_micro P0.17 GPIO_ACTIVE_HIGH>  // Row 1 (top row)
+        , <&pro_micro P0.20 GPIO_ACTIVE_HIGH>  // Row 2
+        , <&pro_micro P0.02 GPIO_ACTIVE_HIGH>  // Row 3
+        , <&pro_micro P1.13 GPIO_ACTIVE_HIGH>  // Row 4
+        , <&pro_micro P0.09 GPIO_ACTIVE_HIGH>  // Row 5
         ;
 
+    // cols go in left to right
     col-gpios
-        = <&pro_micro P GPIO_ACTIVE_HIGH>  // Column 1
-        , <&pro_micro P GPIO_ACTIVE_HIGH>  // Column 2
-        , <&pro_micro P GPIO_ACTIVE_HIGH>  // Column 3
-        , <&pro_micro P GPIO_ACTIVE_HIGH>  // Column 4
-        , <&pro_micro P GPIO_ACTIVE_HIGH>  // Column 5
-        , <&pro_micro P GPIO_ACTIVE_HIGH>  // Column 6
-        , <&pro_micro P GPIO_ACTIVE_HIGH>  // Column 7
+        = <&pro_micro P1.15 GPIO_ACTIVE_HIGH>  // Column 1
+        , <&pro_micro P1.06 GPIO_ACTIVE_HIGH>  // Column 2
+        , <&pro_micro P1.04 GPIO_ACTIVE_HIGH>  // Column 3
+        , <&pro_micro P0.11 GPIO_ACTIVE_HIGH>  // Column 4
+        , <&pro_micro P1.00 GPIO_ACTIVE_HIGH>  // Column 5
+        , <&pro_micro P0.24 GPIO_ACTIVE_HIGH>  // Column 6
+        , <&pro_micro P0.22 GPIO_ACTIVE_HIGH>  // Column 7
         ;
 };
