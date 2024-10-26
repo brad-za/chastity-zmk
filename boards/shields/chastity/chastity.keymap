@@ -5,22 +5,12 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            // Left Side (5x7)
             bindings = <
-                &kp Q    &kp W    &kp E    &kp R    &kp T    &kp Y    &kp U
-                &kp A    &kp S    &kp D    &kp F    &kp G    &kp H    &kp J
-                &kp Z    &kp X    &kp C    &kp V    &kp B    &kp N    &kp M
-                &kp L1   &kp L2   &kp L3   &kp L4   &kp L5   &kp L6   &kp L7
-                &kp K1   &kp K2   &kp K3   &kp K4   &kp K5   &kp K6   &kp K7
-            >;
-
-            // Right Side (5x7)
-            bindings += <
-                &kp P    &kp O    &kp I    &kp U    &kp Y    &kp T    &kp R
-                &kp L    &kp K    &kp J    &kp H    &kp G    &kp F    &kp E
-                &kp M    &kp N    &kp B    &kp V    &kp C    &kp X    &kp Z
-                &kp R1   &kp R2   &kp R3   &kp R4   &kp R5   &kp R6   &kp R7
-                &kp J1   &kp J2   &kp J3   &kp J4   &kp J5   &kp J6   &kp J7
+                &kp Q    &kp W    &kp E    &kp R    &kp T    &kp Y                         &kp O    &kp I    &kp U    &kp Y    &kp T    &kp R
+                &kp A    &kp S    &kp D    &kp F    &kp G    &kp H                         &kp K    &kp J    &kp H    &kp G    &kp F    &kp E
+                &kp Z    &kp X    &kp C    &kp V    &kp B    &kp N                         &kp N    &kp B    &kp V    &kp C    &kp X    &kp Z
+                &kp L1   &kp L2   &kp L3   &kp L4   &kp L5   &kp L6   &kp L7      &kp R1   &kp R2   &kp R3   &kp R4   &kp R5   &kp R6   &kp R7
+                &kp K1   &kp K2   &kp K3   &kp K4   &kp K5   &kp K6                        &kp J2   &kp J3   &kp J4   &kp J5   &kp J6   &kp J7
             >;
         };
     };

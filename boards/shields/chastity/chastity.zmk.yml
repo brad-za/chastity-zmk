@@ -3,7 +3,7 @@ id: chastity
 name: Chastity
 type: shield
 url: https://zmk.dev/docs/
-requires: [nice_nano_v2]
+requires: [pro_micro]
 exposes: []
 features:
   - keys
