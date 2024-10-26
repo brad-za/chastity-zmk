@@ -7,8 +7,5 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: chastity-zmk
-      url: https://github.com/brad-za/chastity-zmk.git
-      revision: main
   self:
     path: config
