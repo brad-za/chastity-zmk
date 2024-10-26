@@ -6,6 +6,19 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+config BT_DEVICE_NAME
+    default "Chastity"
+
+endif
+
+if SHIELD_CHASTITY_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "Chastity Right"
+
+config BT_DEVICE_NAME
+    default "Chastity Right"
+
 endif
 
 if SHIELD_CHASTITY_LEFT || SHIELD_CHASTITY_RIGHT
