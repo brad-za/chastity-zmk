@@ -2,10 +2,12 @@ file_format: "1"
 id: chastity
 name: Chastity
 type: shield
-url: https://zmk.dev/docs/
-requires: [pro_micro]
+url: https://github.com/poes/chastity-zmk
+requires: [nice_nano_v2]
 exposes: []
 features:
   - keys
+  - split
 siblings:
   - chastity_left
+  - chastity_right
