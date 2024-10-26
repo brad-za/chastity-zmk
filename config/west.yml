@@ -2,13 +2,16 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: chastity
+      url-base: https://github.com/brad-za
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
     - name: chastity-zmk
-      url: https://github.com/brad-za/chastity-zmk
+      remote: chastity
       revision: main
+      import: west.yml
   self:
     path: config
