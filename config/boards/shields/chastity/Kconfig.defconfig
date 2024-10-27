@@ -1,18 +1,23 @@
 if SHIELD_CHASTITY_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Chastity"
+	default "Chastity"
 
-config USB_DEVICE_PRODUCT
-    default "Chastity"
+config ZMK_SPLIT_ROLE_CENTRAL
+	default y
 
-config USB_DEVICE_VID
-    default 0x1D50
+endif
 
-config USB_DEVICE_PID
-    default 0x615E
+if SHIELD_CHASTITY_RIGHT
 
-config USB_DEVICE_MANUFACTURER
-    default "ZMK Project"
+config ZMK_KEYBOARD_NAME
+	default "Chastity Right"
+
+endif
+
+if SHIELD_CHASTITY_LEFT || SHIELD_CHASTITY_RIGHT
+
+config ZMK_SPLIT
+	default y
 
 endif
