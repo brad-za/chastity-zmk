@@ -35,8 +35,8 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(4,5)                   RC(4,8) RC(4,9
             , <&gpio1 4  GPIO_ACTIVE_HIGH>
             , <&gpio0 11 GPIO_ACTIVE_HIGH>
             , <&gpio1 0  GPIO_ACTIVE_HIGH>
-            , <&gpio0 24 GPIO_ACTIVE_HIGH>
-            , <&gpio0 22 GPIO_ACTIVE_HIGH>
+            , <&gpio0 22 GPIO_ACTIVE_HIGH>  // Swapped B and V positions
+            , <&gpio0 24 GPIO_ACTIVE_HIGH>  // Swapped B and V positions
             ;
 
         row-gpios
