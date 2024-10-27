@@ -6,25 +6,19 @@
 
 #include "chastity.dtsi"
 
-/ {
-    chosen {
-        zmk,kscan = &kscan0;
-    };
-};
-
 &default_transform {
     col-offset = <7>;
 };
 
 &kscan0 {
     col-gpios
-        = <&gpio0 15 (GPIO_ACTIVE_HIGH)>  // P0.15
-        , <&gpio0 6  (GPIO_ACTIVE_HIGH)>  // P0.06
-        , <&gpio0 4  (GPIO_ACTIVE_HIGH)>  // P0.04
-        , <&gpio0 11 (GPIO_ACTIVE_HIGH)>  // P0.11
-        , <&gpio0 0  (GPIO_ACTIVE_HIGH)>  // P0.00
-        , <&gpio1 4  (GPIO_ACTIVE_HIGH)>  // P1.04
-        , <&gpio1 6  (GPIO_ACTIVE_HIGH)>  // P1.06
+        = <&gpio0 15 GPIO_ACTIVE_HIGH>  // P0.15
+        , <&gpio0 6  GPIO_ACTIVE_HIGH>  // P0.06
+        , <&gpio0 4  GPIO_ACTIVE_HIGH>  // P0.04
+        , <&gpio0 11 GPIO_ACTIVE_HIGH>  // P0.11
+        , <&gpio0 0  GPIO_ACTIVE_HIGH>  // P0.00
+        , <&gpio1 4  GPIO_ACTIVE_HIGH>  // P1.04
+        , <&gpio1 6  GPIO_ACTIVE_HIGH>  // P1.06
         ;
 };
 
@@ -33,9 +27,5 @@
 };
 
 &gpio1 {
-    status = "okay";
-};
-
-&usbd {
     status = "okay";
 };
