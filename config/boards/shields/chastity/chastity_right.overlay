@@ -12,20 +12,12 @@
 
 &kscan0 {
     col-gpios
-        = <&gpio0 15 GPIO_ACTIVE_HIGH>  // P0.15
-        , <&gpio0 6  GPIO_ACTIVE_HIGH>  // P0.06
-        , <&gpio0 4  GPIO_ACTIVE_HIGH>  // P0.04
-        , <&gpio0 11 GPIO_ACTIVE_HIGH>  // P0.11
-        , <&gpio0 0  GPIO_ACTIVE_HIGH>  // P0.00
-        , <&gpio1 4  GPIO_ACTIVE_HIGH>  // P1.04
-        , <&gpio1 6  GPIO_ACTIVE_HIGH>  // P1.06
+        = <&gpio0 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P0.15 (D18)
+        , <&gpio0 6  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P0.06 (D0)
+        , <&gpio0 4  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P0.04 (D2)
+        , <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P0.11 (D7)
+        , <&gpio0 0  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P0.00 (D6)
+        , <&gpio1 4  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P1.04 (D8)
+        , <&gpio1 6  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P1.06 (D9)
         ;
-};
-
-&gpio0 {
-    status = "okay";
-};
-
-&gpio1 {
-    status = "okay";
 };
