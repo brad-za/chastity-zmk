@@ -17,11 +17,3 @@
         , <&gpio1 6  GPIO_ACTIVE_HIGH>  // P1.06
         ;
 };
-
-&gpio0 {
-    status = "okay";
-};
-
-&gpio1 {
-    status = "okay";
-};
