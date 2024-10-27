@@ -6,9 +6,8 @@ if SHIELD_CHASTITY_LEFT
 config ZMK_KEYBOARD_NAME
     default "Chastity"
 
-config ZMK_SPLIT_ROLE_CENTRAL
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
     default y
-    bool
 
 endif
 
@@ -17,10 +16,6 @@ if SHIELD_CHASTITY_RIGHT
 
 config ZMK_KEYBOARD_NAME
     default "Chastity Right"
-
-config ZMK_SPLIT_ROLE_PERIPHERAL
-    default y
-    bool
 
 endif
 
