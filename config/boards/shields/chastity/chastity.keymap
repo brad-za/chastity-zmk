@@ -12,12 +12,17 @@
         compatible = "zmk,keymap";
 
         default_layer {
+            // | Q | W | E | R | T | Y |
+            // | A | S | D | F | G | H |
+            // | Z | X | C | V | B | N |
+            // |CTL|ALT|GUI|SPC|RET|ESC|TAB|
+            // |SFT|GRV|BSP|DEL|MIN|EQL|
             bindings = <
-                &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp N6
                 &kp Q      &kp W      &kp E      &kp R      &kp T      &kp Y
                 &kp A      &kp S      &kp D      &kp F      &kp G      &kp H
-                &kp Z      &kp X      &kp C      &kp V      &kp B      &kp N      &kp M
-                &kp LCTRL  &kp LALT   &kp LGUI   &kp SPACE  &kp RET    &kp ESC
+                &kp Z      &kp X      &kp C      &kp V      &kp B      &kp N
+                &kp LCTRL  &kp LALT   &kp LGUI   &kp SPACE  &kp RET    &kp ESC    &kp TAB
+                &kp LSHFT  &kp GRAVE  &kp BSPC   &kp DEL    &kp MINUS  &kp EQUAL
             >;
         };
     };
