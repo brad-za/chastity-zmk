@@ -6,10 +6,3 @@ config SHIELD_CHASTITY_LEFT
 
 config SHIELD_CHASTITY_RIGHT
     def_bool $(shields_list_contains,chastity_right)
-
-if SHIELD_CHASTITY_LEFT || SHIELD_CHASTITY_RIGHT
-
-config ZMK_SPLIT
-    default y
-
-endif
