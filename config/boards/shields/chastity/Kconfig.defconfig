@@ -1,23 +1,18 @@
-# Copyright (c) 2024 The ZMK Contributors
-# SPDX-License-Identifier: MIT
-
 if SHIELD_CHASTITY_LEFT
 
 config ZMK_KEYBOARD_NAME
     default "Chastity"
 
-endif
+config USB_DEVICE_PRODUCT
+    default "Chastity"
 
-if SHIELD_CHASTITY_RIGHT
+config USB_DEVICE_VID
+    default 0x1D50
 
-config ZMK_KEYBOARD_NAME
-    default "Chastity Right"
+config USB_DEVICE_PID
+    default 0x615E
 
-endif
-
-if SHIELD_CHASTITY_LEFT || SHIELD_CHASTITY_RIGHT
-
-config ZMK_SPLIT
-    default y
+config USB_DEVICE_MANUFACTURER
+    default "ZMK Project"
 
 endif
