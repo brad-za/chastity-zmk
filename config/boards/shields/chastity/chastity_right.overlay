@@ -1,9 +1,5 @@
 #include "chastity.dtsi"
 
-&default_transform {
-    col-offset = <7>;
-};
-
 /*
  * Testing diode direction (row2col):
  * 1. Set row pin HIGH
