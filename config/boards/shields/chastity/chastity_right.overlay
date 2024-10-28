@@ -1,7 +1,7 @@
 #include "chastity.dtsi"
 
 &default_transform {
-    col-offset = <2>;
+    col-offset = <7>;
 };
 
 &kscan0 {
