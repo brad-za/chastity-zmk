@@ -6,13 +6,13 @@
 
 &kscan0 {
     col-gpios
-        = <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // C7 -> Rightmost (Physical pin P0.31)
+        , <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // C7 -> Rightmost (Physical pin P0.31)
         , <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // C6
         , <&gpio0 2  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // C5
         , <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // C4
         , <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // C3
         , <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // C2
-        , <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // C1 -> Leftmost (Physical pin P0.10)
+        = <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // C1 -> Leftmost (Physical pin P0.10)
         ;
 
     row-gpios
