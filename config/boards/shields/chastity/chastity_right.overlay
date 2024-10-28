@@ -1,7 +1,7 @@
 #include "chastity.dtsi"
 
 &default_transform {
-    col-offset = <7>;
+    col-offset = <2>;
 };
 
 &kscan0 {
@@ -23,3 +23,4 @@
         , <&gpio0 9  GPIO_ACTIVE_HIGH>  // R1 -> Top row (Physical pin P0.09)
         ;
 };
+k,kl.kkkk,k,,,,,,,..l.l.ll"?///,...;/;/"?;;;lkkk,k,..,,,,,,,kkkk,,...,.,,,,,,,,....///
