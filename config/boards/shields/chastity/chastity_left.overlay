@@ -1,10 +1,6 @@
 #include "chastity.dtsi"
 
 &kscan0 {
-    compatible = "zmk,kscan-gpio-matrix";
-    label = "KSCAN";
-    diode-direction = "row2col";
-
     col-gpios
         = <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Rightmost first
         , <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>

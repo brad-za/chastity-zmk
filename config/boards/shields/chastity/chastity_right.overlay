@@ -5,33 +5,30 @@
 };
 
 /*
- * Testing row pins through diodes:
- *      - black on the row hole
- *      - red on the pin
- *      - reading on correct pin = 0.135
+ * Testing diode direction (row2col):
+ * 1. Set row pin HIGH
+ * 2. Probe GND on row pin
+ * 3. Probe Vcc on column pin
+ * 4. Press key at intersection
+ * 5. Column pin should read HIGH through diode
  */
 
 &kscan0 {
-    compatible = "zmk,kscan-gpio-matrix";
-    label = "KSCAN";
-    diode-direction = "row2col";
-
-    // Placeholder GPIO configuration - needs to be updated based on testing
     col-gpios
-        = <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Col 1 - Physical RIGHT side of board
-        , <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Col 2
-        , <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Col 3
-        , <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Col 4
-        , <&gpio0 6  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Col 5
-        , <&gpio0 8  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Col 6
-        , <&gpio1 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Col 7 - Physical LEFT side of board (thumb key)
+        = <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Col 0 - Physical RIGHT side of board
+        , <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Col 1
+        , <&gpio1 0  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Col 2
+        , <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Col 3
+        , <&gpio1 4  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Col 4
+        , <&gpio1 6  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Col 5
+        , <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Col 6 - Physical LEFT side of board (thumb key)
         ;
 
     row-gpios
-        = <&gpio1 0  GPIO_ACTIVE_HIGH>  // Row 1 - Physical BOTTOM of board
-        , <&gpio0 24 GPIO_ACTIVE_HIGH>  // Row 2
-        , <&gpio0 22 GPIO_ACTIVE_HIGH>  // Row 3 - Middle row
-        , <&gpio0 9  GPIO_ACTIVE_HIGH>  // Row 4
-        , <&gpio0 2  GPIO_ACTIVE_HIGH>  // Row 5 - Physical TOP of board
+        = <&gpio0 17 GPIO_ACTIVE_HIGH>  // Row 0 - Physical BOTTOM of board
+        , <&gpio0 20 GPIO_ACTIVE_HIGH>  // Row 1
+        , <&gpio0 2  GPIO_ACTIVE_HIGH>  // Row 2 - Middle row
+        , <&gpio1 13 GPIO_ACTIVE_HIGH>  // Row 3
+        , <&gpio0 9  GPIO_ACTIVE_HIGH>  // Row 4 - Physical TOP of board
         ;
 };
