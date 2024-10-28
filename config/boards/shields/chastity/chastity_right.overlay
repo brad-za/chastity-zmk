@@ -1,30 +1,25 @@
 #include "chastity.dtsi"
 
-/*
- * Testing diode direction (row2col):
- * 1. Set row pin HIGH
- * 2. Probe GND on row pin
- * 3. Probe Vcc on column pin
- * 4. Press key at intersection
- * 5. Column pin should read HIGH through diode
- */
+&default_transform {
+    col-offset = <7>;
+};
 
 &kscan0 {
-    col-gpios
-        = <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Col 0 - Physical RIGHT side of board
-        , <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Col 1
-        , <&gpio1 0  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Col 2
-        , <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Col 3
-        , <&gpio1 4  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Col 4
-        , <&gpio1 6  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Col 5
-        , <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Col 6 - Physical LEFT side of board (thumb key)
+    row-gpios
+        = <&gpio0 17 GPIO_ACTIVE_HIGH>  // Bottom row first
+        , <&gpio0 20 GPIO_ACTIVE_HIGH>
+        , <&gpio0 2  GPIO_ACTIVE_HIGH>
+        , <&gpio1 13 GPIO_ACTIVE_HIGH>
+        , <&gpio0 9  GPIO_ACTIVE_HIGH>  // Top row last
         ;
 
-    row-gpios
-        = <&gpio0 17 GPIO_ACTIVE_HIGH>  // Row 0 - Physical BOTTOM of board
-        , <&gpio0 20 GPIO_ACTIVE_HIGH>  // Row 1
-        , <&gpio0 2  GPIO_ACTIVE_HIGH>  // Row 2 - Middle row
-        , <&gpio1 13 GPIO_ACTIVE_HIGH>  // Row 3
-        , <&gpio0 9  GPIO_ACTIVE_HIGH>  // Row 4 - Physical TOP of board
+    col-gpios
+        = <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Rightmost first (physical right edge)
+        , <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio1 0  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio1 4  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio1 6  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Leftmost last (thumb key)
         ;
 };
