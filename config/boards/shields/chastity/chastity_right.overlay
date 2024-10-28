@@ -23,4 +23,3 @@
         , <&gpio0 9  GPIO_ACTIVE_HIGH>  // R1 -> Top row (Physical pin P0.09)
         ;
 };
-k,kl.kkkk,k,,,,,,,..l.l.ll"?///,...;/;/"?;;;lkkk,k,..,,,,,,,kkkk,,...,.,,,,,,,,....///
