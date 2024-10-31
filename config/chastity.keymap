@@ -3,7 +3,7 @@
 #define DEFAULT 0
 #define NUMPAD  1
 #define NAV     2
-jj$$$$$$$$$$$4164646464$$6464644565454
+
 / {
     keymap {
         compatible = "zmk,keymap";
